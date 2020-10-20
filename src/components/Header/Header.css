@@ -1,0 +1,87 @@
+body {
+  background: var(--cinza5);
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.header {
+  background: var(--preto);
+  color: var(--lilas4);
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 2.1rem;
+  padding: 20px 0;
+}
+
+.header a {
+  color: var(--cinza5);
+  text-decoration: none;
+}
+
+.header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: var(--lilas1);
+}
+
+.header li a {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header li:hover {
+  background: var(--lilas2);
+}
+
+.header li:hover a {
+  color: var(--laranja1);
+}
+
+.header li a :last-child {
+  font-size: 1.8rem;
+  margin-right: 10px;
+}
+
+.pesquisa {
+  background: var(--lilas1);
+  padding: 0 0 10px;
+  display:flex;
+  align-items: stretch;
+  position: relative;
+  margin: 0 auto;
+  padding-right: calc((100% - 500px) / 2);
+  padding-left: calc((100% - 500px) / 2);
+}
+
+.pesquisa input {
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  font-size: 1rem;
+  color: var(--lilas1);
+  width: 100%;
+}
+
+.pesquisa button {
+  border-radius: 0 5px 5px 0;
+  position: relative;
+  border: none;
+  background: var(--lilas3);
+  color: var(--cinza5);
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  cursor: pointer;
+}
+
+.pesquisa button:hover {
+  opacity: .85;
+}

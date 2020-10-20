@@ -1,0 +1,89 @@
+.card-produto {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0,0,0,.4);
+  transition: all .2s;
+}
+
+.card-produto:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  transform: translateY(-5px);
+}
+
+.card-produto > * ~ * {
+  margin-top: 20px;
+}
+
+.card-produto .titulo-produto {
+  color: var(--cinza1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-produto .preco {
+  color: var(--laranja1);
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-produto .description {
+  color: var(--cinza3);
+  max-height: 95px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+}
+
+.card-produto .imagem-container img {
+  width:  auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.card-produto .imagem-container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.card-produto a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: .9rem;
+  display: block;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: .1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+
+.card-produto a:hover {
+  opacity: 0.8;
+}
+
+.botoes-container a :first-child {
+  font-size: 1.3rem;
+  margin-right: 5px;
+  flex-shrink: 0;
+}
+
+.botoes-container .comprar {
+  background: var(--laranja1);
+}
+
+.botoes-container .carrinho {
+  background: var(--lilas1);
+}
