@@ -31,7 +31,7 @@ const Produto = (props) => {
             <div className="titulo-fake"></div>
             <div className="preco-fake"></div>
             <div className="descricao-fake"></div>
-            <div class="botoes-fake">
+            <div className="botoes-fake">
               <div className="botao-fake"></div>
               <div className="botao-fake"></div>
             </div>
